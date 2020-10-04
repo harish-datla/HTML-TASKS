@@ -1,0 +1,101 @@
+<style>
+
+form { 
+margin: 350 auto; 
+width:422px;
+border: medium solid black;
+left : 20px;
+}
+input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    text-align: center; 
+    color : black
+}
+mark {
+  background-color: Red;
+  color: White;
+}
+h2{font-size:19.5px;
+     height:15px;}
+::-webkit-input-placeholder {
+   font-style: italic;
+   color: black;
+}
+:-moz-placeholder {
+   font-style: italic;
+   color: black;  
+}
+::-moz-placeholder {
+   font-style: italic;
+   color: black;  
+}
+:-ms-input-placeholder {  
+   font-style: italic;
+   color: black; 
+}
+/* #box::-webkit-input-placeholder { font-style: italic; }
+#box::-ms-input-placeholder { font-style: italic; }
+#box::-moz-placeholder { font-style: italic; } */
+</style>
+<!-- <table border="5" bordercolor="black" width=450><td> -->
+<form action="/users" method="post"><form style="margin:0;padding:0">
+
+  <h2><mark>Yes I want to subscribe to <i>Mag-O-Zine</i></mark></h2>
+  <div>
+    
+    <input id="user_first_name" name="user[first_name]" placeholder="Joe" size="16" type="text"  />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <input id="user_last_name" name="user[last_name]" placeholder="Traders" size="16" type="text" /><br>
+    <label for="user_first_name">First Name</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="name">Last Name</label>
+  </div>
+  <div>
+      
+      <input id="user_address" name="user[address]"  placeholder="Jane Street"size="41" type="text" /><br>
+      <label for="useraddress">Address</label>
+  </div>
+  <div>
+      
+      <input id="user_city" name="user[city]" size="7"  placeholder="New York" type="text" />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input id="user_state" name="user[state]" size="7"  placeholder="New York" type="text" />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input id="user_zip" name="user[zip]" size="7"  placeholder="99999" type="text" /><br>
+      
+      <label for="usercity">City</label>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <label for="userstate">State</label>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <label for="userzip">Zip</label> <br><br>
+      
+  </div>
+  <div>
+    <label>Subscribe for :</label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="", checked = "true">1 year($19.95)
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">2 years($35.00)<br>
+    </label><br>
+  </div>
+  <div>
+    <label>Send Me more information about:</label><br>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="", checked = "true">Computer-Zine
+    </label><br>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Fishing-Zine
+    </label><br>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="", checked = "true">Cato-Zine
+    </label>
+  </div>
+  </form>
+<!-- </td></table> -->
